@@ -10,10 +10,11 @@
     "typescript": "^5"
   },
   "scripts": {
-    "dev": "node --watch index.ts",
-    "dev:worker": "node --watch worker.ts"
+    "dev": "node --env-file=.env --watch-path=index.ts index.ts",
+    "dev:worker": "node --env-file=.env --watch-path=worker.ts worker.ts"
   },
   "dependencies": {
+    "@google/genai": "^2.10.0",
     "@langchain/community": "^1.1.29",
     "@langchain/core": "^1.2.1",
     "@langchain/google-genai": "^2.2.0",
