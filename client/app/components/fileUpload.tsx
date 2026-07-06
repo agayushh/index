@@ -92,7 +92,7 @@ export const FileUpload: React.FC<FileUploadProps> = ({ onUploadSuccess }) => {
                 <Loader2 className="w-8 h-8 animate-spin" />
               </div>
               <div>
-                <p className="font-semibold text-zinc-200 truncate max-w-[280px]">
+                <p className="font-semibold text-zinc-200 truncate max-w-70">
                   Uploading {fileName}
                 </p>
                 <p className="text-xs text-zinc-500 mt-1">
@@ -111,7 +111,7 @@ export const FileUpload: React.FC<FileUploadProps> = ({ onUploadSuccess }) => {
                 <p className="font-semibold text-emerald-400 flex items-center justify-center gap-1.5">
                   Upload Complete
                 </p>
-                <div className="flex items-center justify-center gap-1.5 mt-2 bg-zinc-950/80 border border-zinc-800/80 rounded-lg py-1.5 px-3 max-w-[280px] mx-auto">
+                <div className="flex items-center justify-center gap-1.5 mt-2 bg-zinc-950/80 border border-zinc-800/80 rounded-lg py-1.5 px-3 max-w-70 mx-auto">
                   <FileText className="w-3.5 h-3.5 text-zinc-500 shrink-0" />
                   <p className="text-xs text-zinc-400 truncate">{fileName}</p>
                 </div>

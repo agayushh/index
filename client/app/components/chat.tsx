@@ -79,7 +79,7 @@ export const Chat: React.FC = () => {
   return (
     <div className="flex flex-col h-full w-full bg-zinc-950 text-zinc-100 font-sans border border-zinc-900 rounded-2xl overflow-hidden shadow-2xl relative">
       {/* Glow effect at the top */}
-      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-violet-500/50 to-transparent" />
+      <div className="absolute top-0 inset-x-0 h-px bg-linear-to-r from-transparent via-violet-500/50 to-transparent" />
       
       {/* Header */}
       <div className="flex items-center justify-between px-6 py-4 bg-zinc-900/40 border-b border-zinc-900 backdrop-blur-md">
@@ -98,7 +98,7 @@ export const Chat: React.FC = () => {
       </div>
 
       {/* Messages area */}
-      <div className="flex-1 overflow-y-auto p-6 space-y-4 min-h-[300px] max-h-[60vh] md:max-h-[calc(100vh-250px)] scrollbar-thin scrollbar-thumb-zinc-800 scrollbar-track-transparent">
+      <div className="flex-1 overflow-y-auto p-6 space-y-4 min-h-75 max-h-[60vh] md:max-h-[calc(100vh-250px)] scrollbar-thin scrollbar-thumb-zinc-800 scrollbar-track-transparent">
         {messages.map((message) => {
           const isUser = message.role === "user";
           return (
